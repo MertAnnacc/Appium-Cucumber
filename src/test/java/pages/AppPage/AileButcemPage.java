@@ -67,25 +67,25 @@ public class AileButcemPage {
     public void hesapBilgiDegisikliAssert(){
         String actualIsim=isimKutusu.getText();
         String expected= ConfigReader.getProperty("isim");
-        assertEquals("bilgiler Uyusmuyor",expected,actualIsim);
+        assertEquals("Bilgiler Uyusmuyor",expected,actualIsim);
 
 
         String actualSoyisim=soyisimKutusu.getText();
         String expectedSoyisim=ConfigReader.getProperty("soyisim");
-        assertEquals("bilgiler Uyusmuyor",expectedSoyisim,actualSoyisim);
+        assertEquals("Bilgiler Uyusmuyor",expectedSoyisim,actualSoyisim);
 
 
         String actualSehir=sehirKutusu.getText();
         String expectedSehir=ConfigReader.getProperty("sehir");
-        assertEquals("BILGILER DOGRU DEGIL",expectedSehir,actualSehir);
+        assertEquals("Bilgiler yanlis",expectedSehir,actualSehir);
 
         String actualYas=yasKutusu.getText();
         String expectedYas=ConfigReader.getProperty("yas");
-        assertEquals("bilgiler yanlisdur uasgum",expectedYas,actualYas);
+        assertEquals("bilgiler yanlis",expectedYas,actualYas);
 
         String acutalMeslek=meslekKutusu.getText();
         String expectedMeslek=ConfigReader.getProperty("meslek");
-        assertEquals("bilgiler uyusmaz",expectedMeslek,acutalMeslek);
+        assertEquals("bilgiler yanlis",expectedMeslek,acutalMeslek);
 
 
     }
